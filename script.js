@@ -5,7 +5,13 @@ document.getElementById('certificateForm').addEventListener('submit', function(e
     const course = document.getElementById('course').value.toLowerCase();
     const tasks = document.getElementById('tasks').value.toLowerCase();
     const assignments = document.getElementById('assignments').value.toLowerCase();
-    const result = document.getElementById('result');
+    const result = document.getElementById('results'); // Corrected comment placement
+
+    // Debugging statements
+    console.log('Interest:', interest);
+    console.log('Course:', course);
+    console.log('Tasks:', tasks);
+    console.log('Assignments:', assignments);
 
     if (interest.includes('python certificate')) {
         if (course === 'yes') {
